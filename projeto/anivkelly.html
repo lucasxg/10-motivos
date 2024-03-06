@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html Long="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Cmpatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz anivérsario, linda</title>
+
+
+<style>
+
+    body{
+        background-color: pink;
+    }
+    .painel{
+        margin: auto;
+        background-color: white;
+        width: 600px;
+        height: 550px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #sim{
+height: 40px;
+width: 60px;
+background-color: rgb(224, 30, 121);
+border: 2px solid white;
+border-radius: 10px;
+color: white;
+margin-left: -50px;
+
+
+}
+#nao{
+position: absolute;
+height: 40px;
+width: 60px;
+background-color: rgb(224, 30, 121);
+border: 2px solid white;
+border-radius: 10px;
+color: white;
+margin-left: 10px;
+ 
+
+}
+    </style>
+</head>
+<body>
+
+
+<div class="painel">
+<h1>Feliz Anivérsario, gostosa peituda</h1>
+<h3>Desejo que hoje você seja tão feliz quanto um gatinho brincando de laser points</h3>
+<img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
+
+<h3>Topa um date cmg?</h3>
+<button id="sim" onclick="parabens()"> sim </button>
+<button onmouseover="fuja()" id="nao">nao </button>
+
+</div>
+
+<script>
+
+    function fuja(){
+
+ var botaoNao = document.getElementById("nao")
+var larguraJanela = window.innerWidth;
+var alturaJanela = window.innerHeight;
+
+var maxX = larguraJanela - botaoNao.offsetWidth;
+var maxY = larguraJanela - botaoNao.offsetHeight;
+
+var aleatorioX = Math.floor(Math.random() * maxX);
+var aleatorioY = Math.floor(Math.random() * maxY);
+
+botaoNao.style.left = aleatorioX + "px";
+botaoNao.style.top = aleatorioY + "px";
+
+}
+function parabens(){
+    alert("Parabens, vc fez uma otima escolha!") 
+}
+</script>
+
